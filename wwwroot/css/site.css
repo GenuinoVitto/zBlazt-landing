@@ -19,8 +19,6 @@ body {
     margin-bottom: 60px;
 }
 
-/* END OF RESPONSIVENESS STYLES*/
-
 /* NAVBAR */
 .navbar {
     margin: 0px;
@@ -276,7 +274,11 @@ body {
 .choose-img-container {
     margin: 0px;
     padding: 0px;
-    margin-right: -110px;
+    margin-right: -300px;
+}
+
+.choose-img {
+    width: 1000px;
 }
 /* END OF WHY CHOOSE SECTION STYLES */
 
@@ -401,7 +403,6 @@ footer {
     font-size: 18px;
     color: #170F49;
 }
-
 
 .footer-main a:hover {
     opacity: 0.8;
