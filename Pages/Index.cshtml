@@ -1,0 +1,123 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+
+   <!-- HERO -->
+   <div class="hero">
+        <!-- HERO TEXTS -->
+        <div class="main">
+            <p class="main-text">Effortless <strong class="emph-1">Messaging</strong> for Instant Impact</p>
+
+            <div class="sub">
+                <p class="sub-text">
+                    Streamline your messaging for immediate, effortless,
+                    and impactful engagement with your audience, leaving a lasting impression.
+                </p>
+            </div>
+
+            <!-- HERO BUTTONS -->
+            <div class="hero-buttons">
+                <a href="" class="start-btn btn rounded-pill shadow">Get Started</a>
+                <a href="" class="watch-btn btn"><img src="~/assets/img/play-circle.png" class="watch-btn-img">Watch Demo</a>
+            </div>
+        </div>
+        <!-- HERO IMAGE-->
+        <div class="hero-img-container">
+            <img class="hero-img" src="/assets/img/hero-img.png">
+        </div>
+   </div>
+   <!-- END OF HERO -->
+
+   <!-- CARD ROW -->
+   <section class="card-row">
+       <div class="card">
+           <img src="~/assets/img/headset-icon.png"/>
+           <div class="card-text-container">
+                <p class="card-main-text">Instant Reach</p>
+                <p class="card-sub-text">Reach your audience instantly with SMS, ensuring your message is seen promptly.</p>
+           </div>
+       </div>
+
+       <div class="card">
+           <img src="~/assets/img/calendar-icon.png"/>
+           <div class="card-text-container">
+                <p class="card-main-text">Automation</p>
+                <p class="card-sub-text">Automate campaigns for efficiency, saving time and resources.</p>
+           </div>
+       </div>
+       
+       <div class="card">
+           <img src="~/assets/img/rating-icon.png"/>
+           <div class="card-text-container">
+                <p class="card-main-text">Personalized</p>
+                <p class="card-sub-text">Tailor messages for a more engaging and relevant connection.</p>
+           </div>
+       </div>
+
+        <div class="card">
+            <img src="~/assets/img/chart-icon.png"/>
+            <div class="card-text-container">
+                <p class="card-main-text">Real-time Analytics</p>
+                <p class="card-sub-text">Monitor performance in real-time to optimize your strategy for better results.</p>
+            </div>
+        </div>
+   </section>
+   <!-- END OF CARD ROW -->
+
+   <!-- "DASHBOARD" SECTION -->
+   <div class="dashboard">
+       <div class="dashboard-text-container">
+            <p class="dashboard-text">Your Command Center for <strong class="emph-1">Effortless</strong> and <strong class="emph-1">Insightful</strong> SMS Marketing Management</p>
+       </div>
+       <img class="dashboard-img" src="~/assets/img/dashboard-img.png" />
+    </div>
+   <!-- END OF "DASHBOARD" SECTION -->
+   
+   <!-- "WHY CHOOSE US" SECTION -->
+   <div class="choose">
+       <div class="choose-text">
+            <p id="choose-text-main">Why Choose Us</p>
+            <p id="choose-text-sub">Unlock Success</p>
+
+            <!-- List for WHY to CHOOSE US-->
+            <ul class="choose-text-list">
+                <li>
+                    <p><img src="/assets/img/choose-check-icon.png"/><strong>Efficiency:</strong> Streamline your communication for swift and effective messaging.</p>
+                </li>
+                <li>
+                    <p><img src="/assets/img/choose-check-icon.png"/><strong>Precision:</strong> Tailor messages precisely, ensuring a personalized and impactful connection with your audience.</p>
+                </li>
+                <li>
+                    <p><img src="/assets/img/choose-check-icon.png"/><strong>Simplicity:</strong> Enjoy the ease of automating campaigns effortlessly, saving you time and resources.</p>
+                </li> 
+                <li>  
+                    <p><img src="/assets/img/choose-check-icon.png"/><strong>Insight:</strong> Gain valuable insights through real-time analytics, empowering you to optimize and enhance your messaging strategy.</p>
+                </li>
+            </u>
+       </div>
+
+       <div class="choose-img-container">
+            <img class="choose-img" src="~/assets/img/dashboard-img-2.png" />
+       </div>
+   </div>
+   <!-- END OF "WHY CHOOSE US" SECTION -->
+   
+   <!-- "NEWSLETTER SIGNUP" SECTION -->
+   <div class="newsletter">
+       <img class="newsletter-img" src="~/assets/img/news-letter-box.png"/>
+       <div class="newsletter-content">
+           <form id="newsletter-form">
+               <h2 class="newsletter-prompt">Sign up to our newsletter</h2>
+               <p class="newsletter-sub-text">Lorem ipsum dolor sit amet consectetur. Egestas et feugiat purus enim facilisi nunc blandit nullam.</p>
+                <input type="text" class="form-input" placeholder="Enter your email address" />
+                <!-- no submit button? -->
+           </form>
+       </div>
+   </div>
+   <!-- END OF "NEWSLETTER SIGNUP" SECTION -->
+
+</div>

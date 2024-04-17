@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+:root {
+    --primary: rgba(49, 121, 218, 1); /* Blue */
+    --secondary: rgba(255, 255, 255, 1); /* Light */
+    --accent: rgba(82, 82, 91, 1); /* Grey */
+    --accent-2: rgba(0, 0, 0, 1); /* Black */
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* END OF RESPONSIVENESS STYLES*/
+
+/* NAVBAR */
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--secondary);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    background: url(/assets/img/zBlastLogo.png);
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-inline: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--accent);
+    justify-content: space-evenly;
+    width: 150px;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+
+.nav-links a:hover {
+    color: rgba(49, 121, 218, 1);
+}
+
+.nav-links li:nth-child(5) {
+    padding-left: 25px;
+}
+
+#signup-btn {
+    color: white;
+    background-image: linear-gradient(#4299F7,#245FC3);
+}
+
+#signup-btn:hover {
+    opacity: 0.8;
+}
+/* END OF NAVBAR STYLES */ 
+
+/* HERO */
+.hero {
+    padding-top: 100px;
+    margin: 30px;
+    display: flex;
+}
+
+.hero-img-container {
+    height: 800px;
+}
+
+.hero-img {
+    height: 1400px;
+    width: auto;
+    margin-top: -150px;
+}
+
+.main {
+    padding-top: 30px;
+}
+
+.main-text {
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.emph-1 {
+    background: -webkit-linear-gradient(#4299F7,#245FC3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-text {
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+    opacity: 0.8;
+    color: var(--accent);
+}
+
+.hero-buttons {
+    margin: 0px;
+    padding-top: 40px;
+}
+
+.start-btn {
+    background-image: linear-gradient(#4299F7,#245FC3);
+    color: white;
+    padding: 15px;
+    padding-inline: 40px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.watch-btn {
+    background-image: var(--secondary);
+    color: var(--accent-2);
+    padding: 15px;
+    padding-inline: 35px;
+    border-radius: 50px;
+    border-color: #EEEEEE;
+    border-width: 1px;
+    border-style: solid;
+    text-decoration: none;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.watch-btn-img {
+    margin-bottom: 4px;
+    padding: 5px;
+    width: 30px;
+}
+/* END OF HERO STYLES */
+
+/* CARD ROW */
+.card-row {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 .75rem 1.50rem rgba(0, 0, 0, .05);
+    border-style: none;
+    width: 250px;
+    height: 300px;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.card-text-container {
+    padding: 20px;
+}
+
+.card-main-text {
+    font-weight: 700;
+}
+
+.card-sub-text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 2px;
+    color: black;
+}
+/* END OF CARD ROW STYLES */
+
+/* DASHBOARD SECTION */
+.dashboard {
+    padding-top: 100px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.dashboard-text {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.dashboard-img {
+    width: 1200px;
+    align-self: center;
+}
+/* END OF DASHBOARD SECTION STYLES */
+
+/* WHY CHOOSE SECTION */
+.choose {
+    padding-top: 100px;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.choose-text-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 25px;
+}
+
+.choose-text-list strong {
+    font-weight: 700;
+}
+
+.choose-text-list img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+#choose-text-main {
+    background: -webkit-linear-gradient(#4299F7,#245FC3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    margin: 0px;
+}
+
+#choose-text-sub {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.choose-img-container {
+    margin: 0px;
+    padding: 0px;
+    margin-right: -110px;
+}
+
+.choose-img {
+    
+}
+/* END OF WHY CHOOSE SECTION STYLES */
+
+/* NEWS LETTER */
+.newsletter {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.newsletter-content {
+    position: absolute;
+    bottom: 32%;
+    left: 30%;
+    text-align: center;
+    width: 500px;
+    color: white;
+}
+
+.newsletter-prompt {
+    font-weight: 700;
+}
+
+.newsletter-sub-text {
+    font-weight: 300;
+}
+
+input[type=text] {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--accent-2);
+}
+
+.newsletter-img {
+    padding: 40px;
+    width: 1300px;
+    align-self: center;
+}
+/* END OF NEWS LETTER STYLES*/
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+}
+.footer-main {
+   margin: 30px;
+   padding: 20px;
+}
+
+.footer-details {
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+
+.footer-details p {
+    word-break: break-all;
+    white-space: normal;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.col {
+    padding-left: 50px;
+}
+
+.footer-main ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-main a {
+    text-decoration: none;
+    color: var(--accent-1);
+}
+
+.footer-main li {
+    line-height: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-main-title {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.footer-copyright {
+    float: left;
+}
+
+.footer-terms {
+    float: right;
+}
+/* END OF FOOTER STYLES */
+

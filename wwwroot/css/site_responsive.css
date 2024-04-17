@@ -1,0 +1,15 @@
+﻿/* RESPONSIVENESS - PHONE */
+@media (max-width: 320px) {
+
+}
+/* RESPONSIVENESS - TABLET */
+@media (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .hero-img {
+        height: 500px;
+        width: auto;
+        margin-top: -100px;
+    }
+}

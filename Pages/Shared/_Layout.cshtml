@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] zBlazt Landing Page</title>
+    <!-- Razor View for Styles -->
+    @Html.Partial("_PageStyles")
+    <!-- Razor View for Styles -->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <!-- Razor View for Nav -->
+            @Html.Partial("_Nav")
+            <!-- Razor View for Nav -->
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+       <!-- Razor View for Footer -->
+       @Html.Partial("_Footer")
+       <!-- Razor View for Footer -->
+    </footer>
+
+    <!-- Razor View for Scripts -->
+    @Html.Partial("_PageScripts")
+    <!-- Razor View for Scripts -->
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
