@@ -16,13 +16,13 @@
             <!-- Razor View for Nav -->
         </nav>
     </header>
-    <div class="container">
+    <div id="main-container" class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer id="footer" class="border-top footer text-muted">
        <!-- Razor View for Footer -->
        @Html.Partial("_Footer")
        <!-- Razor View for Footer -->

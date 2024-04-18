@@ -4,12 +4,212 @@
 }
 /* RESPONSIVENESS - TABLET */
 @media (max-width: 768px) {
+    
     html {
-        font-size: 16px;
+
     }
+
+    /* NAV [RESPONSIVE] */
+    nav {
+        width: 100%;
+    }
+
+    .navbar-brand {
+        height: 70px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 80px;
+        font-size: 8px;
+        font-weight: 700;
+        justify-content: space-evenly;
+    }
+
+    .nav-links li {
+        justify-content: space-between;
+        margin: 4px;
+    }
+
+    /* HERO [RESPONSIVE] */
+    .hero-img-container {
+        height: 550px;
+    }
+
     .hero-img {
-        height: 500px;
+        height: 730px;
         width: auto;
         margin-top: -100px;
     }
+
+    .main-text {
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sub-text {
+        font-size: 10px;
+        opacity: 0.5;
+    }
+
+    /* BUTTONS */
+    .start-btn {
+        padding: 10px;
+        padding-inline: 35px;
+    }
+
+    .watch-btn {
+        padding: 5px;
+        padding-inline: 15px;
+        margin-top: 15px;
+    }
+    /* END OF [RESPONSIVE] HERO STYLES */
+
+    /* CARD ROW [RESPONSIVE] */
+    section{
+        width:100%;    
+    }
+
+    .card {
+        height: 250px;
+        margin-inline: 8px;
+    }
+
+    .card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-text-container {
+        padding: 25px;
+    }
+
+    .card-main-text{
+        font-size: 10px;
+    }
+
+    .card-sub-text {
+        font-size: 10px;
+    }
+    /* END OF CARD ROW [RESPONSIVE] STYLES */
+
+    /* DASHBOARD SECTION [RESPONSIVE] STYLES*/
+    .dashboard-text {
+        font-size: 30px;
+    }
+    /* END OF DASHBOARD SECTION [RESPONSIVE] STYLES */
+
+    /* WHY CHOOSE SECTION [RESPONSIVE] */
+    .choose {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+    }
+    
+    .choose-text-list {
+        width: 700px;
+    }
+
+    .choose-text-list img {
+        display: none;
+    }
+
+    .choose-text-list p {
+        font-size: 10px;
+    }
+
+    .choose-text {
+        width: 700px;
+        text-align: center;
+    }
+
+    .choose-img-container {
+        margin: 0;
+        padding: 0;
+        margin-right: -300px;
+        width: 100%;
+    }
+
+    .choose-img {
+        width: 732px; 
+        margin-top: 40px;
+    }
+    /* END OF WHY CHOOSE SECTION [RESPONSIVE] STYLES */
+
+    /* NEWS LETTER [RESPONSIVE]*/
+    .newsletter {
+    
+    }
+
+    .newsletter-img {
+        width: 100%;
+    }
+
+    .newsletter-content {
+        width: 250px;
+        bottom: 25%;
+        left: 33%;
+        font-size: 4px;
+    }
+
+    .newsletter-prompt {
+        font-size: 20px;
+    }
+
+    .newsletter-sub-text {
+        font-size: 8px;
+        width: 250px;
+        justify-content: center;
+    }
+
+    input[type=text] {
+        font-size: 10px;
+        padding: 15px;
+    }
+
+    input[type=text]:focus {
+        font-size: 12px;
+    }
+    /* END OF NEWS LETTER [RESPONSIVE] STYLES */
+
+    .choose {
+        width: 50px;
+    }
+
+    .dashboard-img {
+        width: 10px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+
+    /* FOOTER [RESPONSIVE] */
+    footer {
+        font-size: 10px;
+    }
+
+    .col {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-details {
+        width: 50px;
+        font-size 8px;
+    }
+
+    footer img {
+        width: 80px;
+    }
+
+    footer .container {
+        height: 775px;
+    }
+    /* END OF FOOTER [RESPONSIVE] STYLES */
+
+
 }
