@@ -135,7 +135,7 @@
     }
 }
 
-/* RESPONSIVENESS - SMALL TABLET [Ipad Mini - based] */ /* TODO: Fix for smaller tablet design */
+/* RESPONSIVENESS - 5SMALL TABLET [Ipad Mini - based] */ /* TODO: Fix for smaller tablet design */
 @media (min-width: 481px) and (max-width: 768){
 
     html {
@@ -168,11 +168,11 @@
 
     /* HERO [RESPONSIVE] */
     .hero-img-container {
-        height: 550px;
+        height: 100px;
     }
 
     .hero-img {
-        height: 400px;
+        height: 100px;
         width: auto;
         margin-top: -100px;
     }
@@ -181,6 +181,7 @@
         width: 100%;
         font-size: 40px;
         line-height: 50px;
+        background-color: black;
     }
 
     .sub-text {

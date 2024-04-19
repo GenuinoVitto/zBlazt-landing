@@ -13,7 +13,6 @@ html {
     font-size: 14px;
     position: relative;
     min-height: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -35,8 +34,6 @@ body {
     background-repeat: no-repeat;
     height: 70px;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .nav-item {
@@ -81,28 +78,30 @@ body {
 /* HERO */
 .hero {
     padding-top: 100px;
-    margin: 10px;
+    padding-bottom: 150px;
     display: flex;
 }
 
-.hero-img-container {
-    height: 800px;
-}
-
-.hero-img {
-    height: 1400px;
-    width: auto;
-    margin-top: -150px;
-}
-
 .main {
-    padding-top: 30px;
+    padding-top: 200px;
+    padding-left: 200px;
 }
 
 .main-text {
     font-size: 70px;
     font-weight: 600;
     line-height: 80px;
+}
+
+.hero.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Three columns with the first column occupying 1 part and the second column occupying 2 parts */
+    grid-gap: 20px; /* Adjust as needed */
+}
+
+.hero-img {
+    width: 100%; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .emph-1 {
@@ -168,12 +167,12 @@ body {
 /* END OF HERO STYLES */
 
 /* CARD ROW */
-section{
-    justify-content:center;
-}
 .card-row {
+    justify-content: center;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .card {
@@ -181,25 +180,21 @@ section{
     background-color: #FFFFFF;
     box-shadow: 0 .75rem 1.50rem rgba(0, 0, 0, .05);
     border-style: none;
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
 }
-
 .card img {
     width: 60px;
     height: 60px;
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 60px;
+    margin-left: 40px;
 }
-
 .card-text-container {
-    padding: 20px;
+    padding: 40px;
 }
-
 .card-main-text {
     font-weight: 700;
 }
-
 .card-sub-text {
     font-size: 16px;
     font-weight: 400;
@@ -210,11 +205,11 @@ section{
 
 /* DASHBOARD SECTION */
 .dashboard {
-    padding-top: 100px;
-    width: 70%;
-    margin: auto;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .dashboard-text {
@@ -232,11 +227,16 @@ section{
 
 /* WHY CHOOSE SECTION */
 .choose {
-    padding-top: 100px;
     margin: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.choose-text {
+    padding-left: 150px;
 }
 
 .choose-text-list {
@@ -246,15 +246,12 @@ section{
     padding-top: 25px;
     width: 80%;
 }
-
 .choose-text-list p {
     font-size: 18px;
 }
-
 .choose-text-list strong {
     font-weight: 700;
 }
-
 .choose-text-list img {
     width: 15px;
     margin-right: 10px;
@@ -278,29 +275,40 @@ section{
 .choose-img-container {
     margin: 0px;
     padding: 0px;
-    margin-right: -300px;
 }
 
 .choose-img {
-    width: 1000px;
+    float: right;
+    width: 95%;
 }
 /* END OF WHY CHOOSE SECTION STYLES */
 
 /* NEWS LETTER */
 .newsletter {
     position: relative;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 75px;
+    margin-bottom: 250px;
 }
-
+.newsletter-img {
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-self: center;
+    box-sizing: border-box;
+}
 .newsletter-content {
     position: absolute;
-    bottom: 34%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    width: 500px;
+    width: 30%;
+    height: 50%;
+    justify-content: center;
+    align-content: center;
     color: white;
 }
 
@@ -335,11 +343,6 @@ input[type=text]:focus {
 input[type=text]:focus::placeholder {
     opacity: 0;
 }
-.newsletter-img {
-    padding: 40px;
-    width: 1300px;
-    align-self: center;
-}
 /* END OF NEWS LETTER STYLES*/
 
 /* FOOTER */
@@ -347,8 +350,8 @@ footer {
     height: 100px;
 }
 .footer-main {
-   margin: 30px;
-   padding: 20px;
+    padding: 40px;
+    width: 100%;
 }
 
 .footer-details {
@@ -422,10 +425,13 @@ footer {
 
 .footer-copyright {
     float: left;
+    margin-left: 20px;
 }
 
 .footer-terms {
     float: right;
+    margin-right: 20px;
 }
+
 /* END OF FOOTER STYLES */
 
