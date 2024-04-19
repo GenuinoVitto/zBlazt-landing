@@ -180,8 +180,8 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0 .75rem 1.50rem rgba(0, 0, 0, .05);
     border-style: none;
-    width: 300px;
-    height: 350px;
+    width: 20%;
+    height: auto;
 }
 .card img {
     width: 60px;
@@ -191,6 +191,7 @@ body {
 }
 .card-text-container {
     padding: 40px;
+    margin-bottom: 20px;
 }
 .card-main-text {
     font-weight: 700;
@@ -210,6 +211,10 @@ body {
     width: 100%;
     padding-top: 150px;
     padding-bottom: 150px;
+}
+
+.dashboard-text-container {
+    padding:20px;
 }
 
 .dashboard-text {
