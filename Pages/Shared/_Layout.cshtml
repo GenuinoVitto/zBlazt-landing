@@ -10,22 +10,20 @@
 </head>
 <body>
     <header>
-            <!-- Razor View for Nav -->
-            @Html.Partial("_Nav")
-            <!-- Razor View for Nav -->
-        </nav>
+        <!-- Razor View for Nav -->
+        @Html.Partial("_Nav")
+        <!-- Razor View for Nav -->
     </header>
+
     <div id="main-container" class="">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer id="footer" class="border-top footer text-muted">
-       <!-- Razor View for Footer -->
-       @Html.Partial("_Footer")
-       <!-- Razor View for Footer -->
-    </footer>
+    <!-- Razor View for Footer -->
+    @Html.Partial("_Footer")
+    <!-- Razor View for Footer -->
 
     <!-- Razor View for Scripts -->
     @Html.Partial("_PageScripts")

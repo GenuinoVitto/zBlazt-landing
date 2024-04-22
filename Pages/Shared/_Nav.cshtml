@@ -1,32 +1,50 @@
 ﻿<nav id="nav-container" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-    
-            <a class="navbar-brand" asp-area="" asp-page="/Index"></a>
-                
-    <div id="nav-toggle">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="true" aria-label="Toggle navigation">
+    <!-- Nav Logo -->
+    <a class="navbar-brand" asp-area="" asp-page="/Index"></a>
+    <!-- End of Nav Logo-->
+    <!-- Main Nav -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#choose">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#newsletter">News and Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a id="signup-btn" class="nav-link btn btn-primary rounded-pill text-white shadow" asp-area="" asp-page="/Privacy">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Main Nav -->
+    <!-- Dropdown Button for smaller screens -->
+    <div id="nav-toggle" class="dropdown d-sm-none">
+        <button id="dropdownMenuButton" class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="dropdown" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul id="nav-links" class="nav-links navbar-nav ">
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-page="/Privacy">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-page="/Privacy">News and Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" asp-area="" asp-page="/Privacy">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a id="signup-btn" class="nav-link btn btn-primary rounded-pill text-white shadow" asp-area="" asp-page="/Privacy">Sign Up</a>
-                </li>
-            </ul>
-        </div>
+        <ul id="show" class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+            <li class="nav-item">
+                <a class="dropdown-item" asp-area="" asp-page="/Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="dropdown-item" href="#choose">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="dropdown-item" href="#newsletter">News and Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="dropdown-item" href="#footer">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a id="signup-btn" class="dropdown-item btn btn-primary rounded-pill text-white shadow" asp-area="" asp-page="/Privacy">Sign Up</a>
+            </li>
+        </ul>
     </div>
-          
-    
+    <!-- End of Dropdown Button -->
 </nav>
