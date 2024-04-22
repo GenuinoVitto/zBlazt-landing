@@ -1,8 +1,39 @@
 ﻿/* RESPONSIVENESS - MOBILE PHONE */
 @media (max-width: 480px) {
+    .nav-links li:nth-child(5) {
+        padding-left: 0;
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .watch-btn {
+        padding: 15px;
+        padding-inline: 25px;
+    }
+
+    .navbar-brand {
+        background-size: 50%;
+    }
+    #nav-toggle {
+        text-align: end;
+        overflow: visible;
+    }
+    .show #signup-btn {
+        width: 100%;
+        padding-inline: 0px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #dropdown {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
     .hero.grid-container {
         grid-template-columns: 1fr;
-       
     }
 
     .hero {
@@ -53,7 +84,7 @@
 
     .card {
         width: 80%;
-        padding-top: 20px;
+        margin-top: 20px;
     }
 
     .dashboard {
@@ -89,13 +120,15 @@
 
 }
 
-/* RESPONSIVENESS - 5SMALL TABLET [Ipad Mini - based] */ /* TODO: Fix for smaller tablet design */
+/* RESPONSIVENESS - SMALL TABLET */
 @media (min-width: 481px) and (max-width: 768px) {
     
+    nav{ width: 100%;}
+
     .hero {
         padding-bottom: 20px;
     }
-    
+
     .main-text {
         font-size: 30px;
         line-height: 35px;
@@ -126,7 +159,7 @@
     }
 }
 
-/* RESPONSIVENESS - BIG TABLET [Ipad Pro - based] */
+/* RESPONSIVENESS - BIG TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
 
     html {

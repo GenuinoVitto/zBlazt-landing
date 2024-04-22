@@ -1,13 +1,14 @@
-﻿<div id="nav-container" class="container">
-        <a class="navbar-brand" asp-area="" asp-page="/Index"></a>
+﻿<nav id="nav-container" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    
+            <a class="navbar-brand" asp-area="" asp-page="/Index"></a>
+                
+    <div id="nav-toggle">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
-    
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul id="nav-links" class="nav-links navbar-nav flex-grow-1">
+        <div id="dropdown" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul id="nav-links" class="nav-links navbar-nav ">
                 <li class="nav-item">
                     <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                 </li>
@@ -25,4 +26,7 @@
                 </li>
             </ul>
         </div>
-</div>
+    </div>
+          
+    
+</nav>
